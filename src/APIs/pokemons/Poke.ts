@@ -11,3 +11,8 @@ export async function getAllPokemons(): Promise<any> {
     return response.data
 }
 
+export async function getDetailsPoke(id:string) {
+    const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    return response.data
+}
+
