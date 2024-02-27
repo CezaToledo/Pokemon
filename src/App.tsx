@@ -1,8 +1,9 @@
 
 import Layout from "./Modules/Layout";
-import Home from "./Modules/home/home";
+
 import Detlhes from "./Modules/detalhes/Detalhes";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Modules/home";
 
 function App() {
   return (
