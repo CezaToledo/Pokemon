@@ -63,7 +63,7 @@ const Detalhes = () => {
         )}
           <p className=" text-gray-500 text-xs text-center">Moves</p></div>
       </div>
-      <p className="text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a ipsa optio vero qui, consequuntur odit corporis autem nisi </p>
+      <p className="text-xs">teste</p>
       <h2 className="text-center text-xl text-green-600">Base Stats</h2>
       <div className=" flex flex-wrap ">
         <div className="flex flex-col border-r pr-2 mr-2 text-green-600">
