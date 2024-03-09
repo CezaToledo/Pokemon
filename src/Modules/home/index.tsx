@@ -26,13 +26,42 @@ const Home = () => {
 
   }
 
-  const temaTeste = createTheme({
+
+  const themeInputSearch = createTheme({
 
     palette: {
 
       primary: {
 
         main: '#fff',
+
+      },
+
+    },
+
+    components: {
+
+      MuiInput: {
+
+        styleOverrides: {
+
+          underline: {
+
+            '&:before': {
+
+              borderBottom: '1px solid #fff', // Substitua "yourTextColor" pela cor desejada
+
+            },
+
+          },
+
+          input: {
+
+            color: '#fff', // Substitua "yourTextColor" pela cor desejada
+
+          },
+
+        },
 
       },
 
@@ -72,7 +101,7 @@ const Home = () => {
 
         <nav className="p-5 w-[50%] auto items-center flex justify-center">
           
-          <ThemeProvider theme={temaTeste}>
+          <ThemeProvider theme={themeInputSearch}>
             
               <TextField     
               size='small'
@@ -103,7 +132,10 @@ const Home = () => {
             items-center border-[1px]
             border-gray-600  
             transition ease-in-out 
-            delay-75  
+            delay-75 
+            text-xl
+            text-white 
+            hover:text-black
             hover:-translate-y-1 
             hover:scale-102 
             hover:bg-purple-200 
@@ -117,7 +149,7 @@ const Home = () => {
             
                 </div>
                        
-                <h1 className="text-white">{items.name}</h1>
+                <h1 className="">{items.name}</h1>
 
             </div>
 
