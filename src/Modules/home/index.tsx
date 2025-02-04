@@ -118,7 +118,7 @@ const Home = () => {
         </nav>
         
         
-        <div className=" flex flex-wrap gap-4 justify-center   ">
+        <div className=" flex flex-wrap gap-4 justify-center    ">
         
           {poke.map((items: allPokeInterface, index:any) => (
           
