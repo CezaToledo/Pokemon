@@ -7,8 +7,8 @@ export interface interfaceGifsPoke {
 
 
 export async function getAllPokemons(): Promise<any> {
-    const response = await axios.get("https://pokeapi.co/api/v2/pokemon")
-    return response.data
+    const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0");
+    return response.data;
 }
 
 export async function getDetailsPoke(id:string) {
